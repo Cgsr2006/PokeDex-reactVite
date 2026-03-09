@@ -1,0 +1,38 @@
+/*CSS do componente Input*/
+
+.botao {
+  background-color: #1c90e3;
+  color: #f9fafb;
+  border: none;
+  cursor: pointer;
+
+  margin-left: 5px;
+  font-size: 16px;
+  width: 135px;
+  height: 64px;
+  border-radius: 8px;
+}
+
+.input {
+  background-color: #334155;
+  color: #788ec2;
+  border: none;
+/* border-color: solid 2px #1c90e3; */
+
+  font-size: 22px;
+  padding-left: 16px;
+  margin-right: 15px;
+  border-radius: 16px;
+  width: 945px;
+  height: 64px;
+}
+
+.input::placeholder {
+  color: #788ec2;
+  font-size: 22px;
+}
+
+.input:focus {
+  outline: solid 1.5px #1c90e3;
+
+}

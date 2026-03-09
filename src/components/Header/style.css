@@ -1,0 +1,28 @@
+/*CSS da página do component Header*/
+.divHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 25px;
+}
+
+.icone{
+    width: 64px;
+    height: 64px;
+}
+
+.botaoIcone{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.titulo{
+    color: #F8FAFC;
+    place-items: center;
+
+    font-size: 32px;
+    line-height: 0px;
+
+}
