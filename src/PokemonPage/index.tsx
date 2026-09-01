@@ -5,8 +5,8 @@ import { Input } from "../components/Input";
 import { useNavigate, useParams } from "react-router-dom";
 import { Header } from "../components/Header";
 
-import Divider from "../assets/ImagensGeral/divider.png";
-import Pikachu from "../assets/ImagensGeral/pikachu-svgrepo-com.svg";
+import Divider from "/divider.png";
+import Pikachu from "/pikachu-svgrepo-com.svg";
 
 // useState -> mudanças de estados
 // useEffect -> observa uma variável e executa um bloco de códico caso haja alguma mudança na variável

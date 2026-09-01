@@ -1,7 +1,6 @@
-import React, { useState } from "react";
 import "./style.css";
-import ImagemPokemons from "../assets/ImagensGeral/image 1.png";
-import Divider from "../assets/ImagensGeral/divider.png";
+import ImagemPokemons from "/image 1.png";
+import Divider from "/divider.png";
 import { Input } from "../components/Input";
 import { useNavigate } from "react-router-dom";
 import { Header } from "../components/Header";

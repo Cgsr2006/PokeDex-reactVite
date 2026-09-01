@@ -1,9 +1,6 @@
-import React, { useState } from "react";
 import "./style.css";
-import Logo from "../assets/ImagensGeral/Logo.svg";
-import Icon from "../assets/ImagensGeral/icon.png";
-import Pikachu from "../assets/ImagensGeral/Group.png";
-import Divider from "../assets/ImagensGeral/divider.png";
+import Pikachu from "/Group.png";
+import Divider from "/divider.png";
 import { Input } from "../components/Input";
 import { useNavigate } from "react-router-dom";
 import { Header } from "../components/Header";

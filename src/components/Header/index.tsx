@@ -1,7 +1,6 @@
-import React from 'react';
 import './style.css';
-import Logo from "../../assets/ImagensGeral/Logo.svg";
-import Icon from "../../assets/ImagensGeral/icon.png";
+import Logo from "/Logo.svg";
+import Icon from "/icon.png";
 
 interface IHeader{
     texto1: string;
