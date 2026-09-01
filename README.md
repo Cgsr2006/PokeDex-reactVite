@@ -1,69 +1,27 @@
-# React + TypeScript + Vite
+# 🔴 PokéDex (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Evolução do projeto **Pokémon Finder / PokéDex**, refatorado de Vanilla JS para **React** com **TypeScript** e **Vite**. A aplicação mantém a consulta dinâmica de dados da [PokéAPI](https://pokeapi.co/), incorporando conceitos de **componentização**, **gerenciamento de estado** e **divisão clara de views/páginas**.
 
-Currently, two official plugins are available:
+## 🚀 O que mudou nesta versão?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Componentização:** Isolamento de elementos visuais e lógicos reutilizáveis na pasta `components`.
+- **Arquitetura Modular de Páginas:** Divisão explícita das telas em views dedicadas:
+  - `Home`: Tela inicial de busca por nome ou número da PokéDex.
+  - `PokemonPage`: Exibição detalhada de sprites (Default/Shiny), tipos, habilidades e atributos.
+  - `ErrorPage`: View de tratamento para pesquisas não encontradas.
+- **Ambiente de Desenvolvimento Rápido:** Migração para **Vite** com **TypeScript**, garantindo tipagem estática e *Hot Module Replacement (HMR)* instantâneo.
 
-## Expanding the ESLint configuration
+## ✨ Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Busca por Nome ou ID:** Pesquisa direta de Pokémons integrando a PokéAPI.
+- **Visualização de Sprites Interativos:** Alternância entre versões normais e *Shiny*, além de efeito visual ao passar o mouse.
+- **Alternância de Abas de Dados:** Troca fluida entre visualização de aparência/informações gerais e habilidades/status base.
+- **Tratamento de Erros:** Redirecionamento para a `ErrorPage` quando a busca não retorna resultados válidos.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tecnologias Utilizadas
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **React 18** (Biblioteca para construção de interfaces declarativas e componentizadas)
+- **TypeScript** (Tipagem estática para maior previsibilidade e segurança no código)
+- **Vite** (Ferramenta de build e dev server de alta performance)
+- **CSS3** (Estilização da interface)
+- **PokéAPI** (API REST de dados climatológicos/Pokémon)
