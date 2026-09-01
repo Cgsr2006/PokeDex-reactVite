@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Corpo Principal (Vermelho) -->
+  <rect x="96" y="40" width="320" height="432" rx="36" fill="#DC0A2D"/>
+  
+  <!-- Sombra/Detalhe Inferior -->
+  <path d="M 96 180 L 416 180 L 416 436 C 416 456 400 472 380 472 L 132 472 C 112 472 96 456 96 436 Z" fill="#B00824"/>
+
+  <!-- Linha de Divisão do Topo -->
+  <path d="M 96 160 H 220 L 250 130 H 416" fill="none" stroke="#80051A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Lente Grande de Cima (Azul) -->
+  <circle cx="160" cy="100" r="38" fill="#E6E6E6"/>
+  <circle cx="160" cy="100" r="30" fill="#2A2A2A"/>
+  <circle cx="160" cy="100" r="24" fill="#1B9AF7"/>
+  <circle cx="152" cy="92" r="8" fill="#A2E0FF" opacity="0.8"/>
+
+  <!-- Luzes LED Superiores (Vermelho, Amarelo, Verde) -->
+  <circle cx="250" cy="75" r="10" fill="#FF0000" stroke="#80051A" stroke-width="2"/>
+  <circle cx="280" cy="75" r="10" fill="#FFCC00" stroke="#997A00" stroke-width="2"/>
+  <circle cx="310" cy="75" r="10" fill="#4CD964" stroke="#248A3D" stroke-width="2"/>
+
+  <!-- Moldura da Tela -->
+  <rect x="136" y="195" width="240" height="150" rx="16" fill="#D9D9D9"/>
+
+  <!-- Tela Acensa -->
+  <rect x="156" y="210" width="200" height="120" rx="8" fill="#51ADDA"/>
+  <!-- Brilho na Tela -->
+  <polygon points="156,210 260,210 156,315" fill="#FFFFFF" opacity="0.25"/>
+
+  <!-- Luzes Vermelhas acima da Tela -->
+  <circle cx="236" cy="203" r="4" fill="#FF0000"/>
+  <circle cx="276" cy="203" r="4" fill="#FF0000"/>
+
+  <!-- Direcional (D-Pad) -->
+  <path d="M 175 375 H 195 V 395 H 215 V 415 H 195 V 435 H 175 V 415 H 155 V 395 H 175 Z" fill="#222222"/>
+  <circle cx="185" cy="405" r="3" fill="#111111"/>
+
+  <!-- Botões de Ação -->
+  <rect x="245" y="380" width="45" height="10" rx="5" fill="#E71D23"/>
+  <rect x="245" y="400" width="45" height="10" rx="5" fill="#2A75BB"/>
+  
+  <!-- Tela/Botão Verde Inferior -->
+  <rect x="305" y="378" width="65" height="38" rx="8" fill="#4BC56D"/>
+</svg>
